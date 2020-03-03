@@ -7,7 +7,11 @@
     <authors>Linkerd</authors>
     <summary>Ultralight service mesh for Kubernetes and beyond</summary>
     <description>Linkerd is an ultralight service mesh for Kubernetes. It gives you observability, reliability, and security without requiring any code changes.</description>
-    <license type="expression">Apache License Version 2.0</license>
+
+    <projectUrl>https://github.com/linkerd/linkerd2</projectUrl>
+    <licenseUrl>https://github.com/linkerd/linkerd2/blob/master/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/linkerd/linkerd2/releases</releaseNotes>
+    <docsUrl>https://linkerd.io/docs</docsUrl>
 
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
