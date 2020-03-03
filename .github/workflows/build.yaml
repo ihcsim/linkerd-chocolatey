@@ -1,5 +1,9 @@
 name: build
 
+env:
+  LINKERD_VERSION: 2.6.1
+  LINKERD_VERSION_PREFIX: stable
+
 on:
   push:
     branches:
@@ -18,5 +22,5 @@ jobs:
     - name: upload nupkg file
       uses: actions/upload-artifact@v1
       with:
-        name: linkerd-stable-2.6.1.nupkg
-        path: linkerd.2.6.1.nupkg
+        name: linkerd-${{ env.LINKERD_VERSION_PREFIX }}-${{ env.LINKERD_VERSION }}.nupkg
+        path: linkerd.${{ env.LINKERD_VERSION }}.nupkg
