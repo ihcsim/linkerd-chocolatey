@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>linkerd</id>
+    <version>2.6.1</version>
+    <title>Linkerd</title>
+    <authors>Linkerd</authors>
+    <summary>Ultralight service mesh for Kubernetes and beyond</summary>
+    <description>Linkerd is an ultralight service mesh for Kubernetes. It gives you observability, reliability, and security without requiring any code changes.</description>
+    <license type="expression">Apache License Version 2.0</license>
+
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
