@@ -12,6 +12,11 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: choco pack
-      uses:  crazy-max/ghaction-chocolatey@v1
+      uses: crazy-max/ghaction-chocolatey@v1
       with:
         args: pack
+    - name: upload nupkg file
+      uses: actions/upload-artifact@v1
+      with:
+        name: linkerd-stable-2.6.1.nupkg
+        path: linkerd.2.6.1.nupkg
