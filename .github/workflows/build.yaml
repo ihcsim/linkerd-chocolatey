@@ -1,0 +1,17 @@
+name: build
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+    - name: choco pack
+      uses:  crazy-max/ghaction-chocolatey@v1
+      with:
+        args: pack
