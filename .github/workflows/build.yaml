@@ -18,7 +18,7 @@ jobs:
     - name: choco pack
       uses: crazy-max/ghaction-chocolatey@v1
       with:
-        args: pack
+        args: pack bin/win/linkerd.nuspec
     - name: upload nupkg file
       uses: actions/upload-artifact@v1
       with:
