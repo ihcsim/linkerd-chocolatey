@@ -10,4 +10,4 @@ $packageArgs = @{
 }
 
 Get-ChocolateyWebFile @packageArgs
-Install-ChocolateyPath $packageArgs.fileFullPath 'Machine'
+Install-ChocolateyPath $packageArgs.fileFullPath 'User'
