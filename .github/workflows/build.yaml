@@ -16,7 +16,9 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: update version in nuspec file
-      run: sed -i s/$\{LINKERD_VERSION\}/${{ env.LINKERD_VERSION }}/g bin/win/linkerd.nuspec
+      run: |
+        sed -i s/$\{LINKERD_VERSION\}/${{ env.LINKERD_VERSION }}/g bin/win/linkerd.nuspec
+        sed -i s/$\{LINKERD_VERSION\}/${{ env.LINKERD_VERSION }}/g bin/win/tools/chocolateyInstall.ps1
     - name: choco pack
       uses: crazy-max/ghaction-chocolatey@v1
       with:
