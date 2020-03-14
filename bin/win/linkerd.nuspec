@@ -19,6 +19,6 @@
   </metadata>
 
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="bin\win\tools\**" target="tools" />
   </files>
 </package>
